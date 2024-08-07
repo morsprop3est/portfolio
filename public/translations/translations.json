@@ -1,0 +1,76 @@
+{
+  "en": {
+    "home": {
+      "sidebar": {
+        "home": "Home",
+        "about": "About me",
+        "resume": "resume",
+        "portfolio": "Portfolio",
+        "contact": "Contact",
+        "button": "Hire me"
+      }
+    },
+    "about": {
+      "header": "About me",
+      "description": "..."
+    },
+    "resume": {
+      "header": "Why hire me?",
+      "description": "...",
+      "list" : {
+        "education": "Education",
+        "hardSkills": "Hard Skills",
+        "softSkills": "Soft Skills"
+      },
+      "portfolio": {
+        "header": "Portfolio",
+        "list": {
+          "allProjects": "All Projects",
+          "programming": "Programming",
+          "design": "Design",
+          "videoEditing": "Video Editing"
+        }
+      },
+      "contact": {
+
+      }
+    }
+  },
+  "ua": {
+    "home": {
+      "sidebar": {
+        "home": "Головна сторінка",
+        "about": "Про мене",
+        "resume": "Резюме",
+        "portfolio": "Портфоліо",
+        "contact": "Контакти",
+        "button": "Найняти мене"
+      }
+    },
+    "about": {
+      "header": "Про мене",
+      "description": "..."
+    },
+    "resume": {
+      "header": "Чому наймати мене?",
+      "description": "...",
+      "list" : {
+        "education": "Освіта",
+        "hardSkills": "Технічні навички",
+        "softSkills": "Особисті Навички"
+      },
+      "portfolio": {
+        "header": "Портфоліо",
+        "list": {
+          "allProjects": "Всі проекти",
+          "programming": "Програмування",
+          "design": "Дизайн",
+          "videoEditing": "Обробка відео"
+        }
+      },
+      "contact": {
+
+      }
+    }
+  }
+}

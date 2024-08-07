@@ -2,9 +2,13 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import styles from './Sidebar.module.scss';
+import { useLang } from '@/hooks/useLang';
+import Link from 'next/link';
+
 
 import Button from '@/components/Button/Button';
+
+import styles from './Sidebar.module.scss';
 
 interface SidebarProps {
     isOpen: boolean;
@@ -22,6 +26,8 @@ const overlayVariants = {
 };
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
+    const { lang, translations } = useLang();
+
     return (
         <div className={styles.wrapper}>
             <motion.div
@@ -41,11 +47,11 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
             >
                 <nav className={styles.nav}>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About me</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><Link href="/">{translations[lang].home.sidebar.home}</Link></li>
+                        <li><Link href="/about">{translations[lang].home.sidebar.about}</Link></li>
+                        <li><Link href="/resume">{translations[lang].home.sidebar.resume}</Link></li>
+                        <li><Link href="/portfolio">{translations[lang].home.sidebar.portfolio}</Link></li>
+                        <li><Link href="/contact">{translations[lang].home.sidebar.contact}</Link></li>
                     </ul>
                     <Button variant="filled">
                         <span>Hire me</span>
