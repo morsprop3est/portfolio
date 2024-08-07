@@ -1,0 +1,41 @@
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 125px;
+    padding: 0 20px;
+    color: #fff;
+
+    .logo {
+      width: 75px;
+      height: auto;
+      color: white;
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+
+      .line1, .line3 {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+      }
+
+      .line2 {
+        margin: 5px auto;
+        width: 15px;
+        height: 3px;
+        background-color: #fff;
+      }
+    }
+  }
+
+}

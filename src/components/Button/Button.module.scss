@@ -1,0 +1,27 @@
+@import '@/styles/variables';
+
+.button {
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-family: $font-family;
+  font-weight: $font-weight-regular;
+  cursor: pointer;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 2px solid #DCDCDC;
+
+
+  &.filled {
+    background-color: #DCDCDC;
+    color: #050505;
+    border: none;
+  }
+
+  &.outlined {
+    background-color: transparent;
+    color: #DCDCDC;
+    outline: 2px solid #DCDCDC;
+  }
+}

@@ -1,0 +1,34 @@
+@keyframes moveUp {
+  0% {
+    background-position: center bottom;
+  }
+  50% {
+    background-position: center top;
+  }
+  100% {
+    background-position: center bottom;
+  }
+}
+
+.mainBackground {
+  position: fixed; /* Изменено с relative на fixed */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #000;
+  overflow: hidden;
+
+  .triangle {
+    width: 45vw;
+    height: 75vh;
+    background-size: 15vw;
+    background-position: center bottom;
+    background-color: gray;
+    animation: moveUp 120s linear infinite;
+  }
+}
