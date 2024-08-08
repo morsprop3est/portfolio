@@ -5,7 +5,8 @@ import { motion } from 'framer-motion';
 import { useLang } from '@/hooks/useLang';
 import Link from 'next/link';
 
-
+import LanguageToggle from '@/components/LanguageToggle/LanguageToggle';
+import ThemeToggleButton from '@/components/ThemeToggleButton/ThemeToggleButton';
 import Button from '@/components/Button/Button';
 
 import styles from './Sidebar.module.scss';
@@ -54,9 +55,13 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                         <li><Link href="/contact">{translations[lang].home.sidebar.contact}</Link></li>
                     </ul>
                     <Button variant="filled">
-                        <span>Hire me</span>
+                        <span>{translations[lang].home.sidebar.button}</span>
                     </Button>
                 </nav>
+                <div className={styles.footer}>
+                    <ThemeToggleButton/>
+                    <LanguageToggle/>
+                </div>
             </motion.div>
         </div>
     );
