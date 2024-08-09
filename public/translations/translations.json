@@ -4,7 +4,7 @@
       "sidebar": {
         "home": "Home",
         "about": "About me",
-        "resume": "resume",
+        "resume": "Resume",
         "portfolio": "Portfolio",
         "contact": "Contact",
         "button": "Hire me"
@@ -39,12 +39,12 @@
   "ua": {
     "home": {
       "sidebar": {
-        "home": "Головна сторінка",
+        "home": "Головна",
         "about": "Про мене",
         "resume": "Резюме",
         "portfolio": "Портфоліо",
         "contact": "Контакти",
-        "button": "Найняти мене"
+        "button": "Найняти"
       }
     },
     "about": {

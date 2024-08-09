@@ -59,8 +59,8 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                     </Button>
                 </nav>
                 <div className={styles.footer}>
-                    <ThemeToggleButton/>
-                    <LanguageToggle/>
+                    <ThemeToggleButton />
+                    <LanguageToggle />
                 </div>
             </motion.div>
         </div>

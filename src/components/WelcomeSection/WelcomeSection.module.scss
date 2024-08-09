@@ -1,0 +1,53 @@
+@import '/src/styles/variables';
+@import '/src/styles/container';
+
+.container {
+
+  .welcomeWrapper {
+    padding: 100px 25px 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-family: $font-family;
+    letter-spacing: 0.05em;
+
+    p {
+      color: #DCDCDC;
+      margin: 0;
+      font-size: 1rem;
+      font-weight: $font-weight-bold;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #DCDCDC;
+      font-weight: $font-weight-bold;
+      margin: 0;
+    }
+    h2 {
+      color: #DCDCDC;
+      font-size: 0.875rem;
+      font-weight: $font-weight-light;
+
+
+      a {
+        color: #DCDCDC;
+        text-decoration: underline;
+        font-size: 0.875rem;
+      }
+
+    }
+
+    .buttonWrapper {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      .socialButtons {
+        display: flex;
+        gap: 25px;
+      }
+    }
+  }
+}

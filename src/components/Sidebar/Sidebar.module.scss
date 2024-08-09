@@ -37,16 +37,40 @@
     ul {
       font-family: $font-family;
       font-weight: $font-weight-regular;
+      letter-spacing: 0.05em;
       font-size: 1rem;
       list-style: none;
       padding: 0;
 
       li {
         margin: 25px 0;
+        position: relative;
+        overflow: hidden;
 
         a {
           color: #fff;
           text-decoration: none;
+          display: inline-block;
+          padding: 5px 0;
+          transition: transform 0.3s ease-out;
+
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: -100%;
+            width: 100%;
+            height: 3px;
+            background-color: #DCDCDC;
+            transition: left 0.3s ease-out;
+          }
+
+          &:hover {
+
+            &:after {
+              left: 0;
+            }
+          }
         }
       }
     }
@@ -57,4 +81,21 @@
     justify-content: space-between;
     padding: 25px;
   }
+
+  button {
+    transition: transform 0.1s ease-out;
+
+    &:hover {
+      transform: scale(1.1);
+      animation: shake 0.5s ease infinite;
+    }
+  }
+}
+
+@keyframes shake {
+  0% { rotate: 0deg }
+  25% { rotate: 2deg }
+  50% { rotate: -2deg }
+  75% { rotate: 2deg }
+  100% { rotate: 0deg }
 }
