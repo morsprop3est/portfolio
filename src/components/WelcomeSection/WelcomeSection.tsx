@@ -11,11 +11,9 @@ import { TableDocument } from 'iconic-react';
 import styles from './WelcomeSection.module.scss';
 
 const WelcomeSection: React.FC = () => {
-    // Создание массива символов для анимации печати
     const text = "Hi, I'm Mykola!";
     const textArray = text.split('');
 
-    // Определение вариантов анимации для текста
     const letterAnimation = {
         hidden: { opacity: 0 },
         visible: (i: number) => ({
@@ -27,7 +25,6 @@ const WelcomeSection: React.FC = () => {
         }),
     };
 
-    // Определение вариантов анимации для элементов
     const itemAnimation = {
         hidden: { opacity: 0, x: 100 },
         visible: (i: number) => ({

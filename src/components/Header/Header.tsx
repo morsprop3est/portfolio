@@ -1,17 +1,14 @@
-'use client';
+'use client'
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from './Header.module.scss';
-
-import Logo from '@/../public/img/logo.svg';
-
 import Sidebar from '@/components/Sidebar/Sidebar';
 
 const lineVariants = {
     closed: { opacity: 1, x: 0 },
-    open: { opacity: 0,  x: -20 },
+    open: { opacity: 0, x: -20 },
     line2Closed: { opacity: 1, x: 0 },
     line2Open: { opacity: 0, x: -20}
 };
@@ -33,7 +30,7 @@ const Header: React.FC = () => {
                     whileTap={{ scale: 0.9 }}
                     transition={{type: 'spring', stiffness: 400, damping: 15 }}
                 >
-                    <Image src={Logo} alt="logo"/>
+                    {/* Image component is not needed here if you use background-image */}
                 </motion.div>
                 <motion.div
                     className={styles.hamburger}

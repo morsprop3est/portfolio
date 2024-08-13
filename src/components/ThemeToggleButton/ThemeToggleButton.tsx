@@ -1,19 +1,16 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Moon, Sun1 } from 'iconic-react';
+import { useTheme } from '@/context/theme';
 import styles from './ThemeToggleButton.module.scss';
 
 const ThemeToggleButton: React.FC = () => {
-    const [isDarkMode, setIsDarkMode] = useState(true);
-
-    const handleToggle = () => {
-        setIsDarkMode(prevMode => !prevMode);
-    };
+    const { isDarkMode, toggleTheme } = useTheme();
 
     return (
-        <div className={styles.toggleContainer} onClick={handleToggle}>
+        <div className={styles.toggleContainer} onClick={toggleTheme}>
             <motion.div
                 className={styles.toggle}
                 key={isDarkMode ? 'moon' : 'sun'}

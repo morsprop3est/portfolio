@@ -9,3 +9,16 @@ html, body {
   overflow: hidden;
   height: 100%;
 }
+
+
+:root {
+  --color-primary: #050505;
+  --color-secondary: #DCDCDC;
+  --logo: url('/img/logo-light.svg'); // Удалите 'public' из пути
+}
+
+[data-theme='dark'] {
+  --color-primary: #DCDCDC;
+  --color-secondary: #050505;
+  --logo: url('/img/logo.svg'); // Удалите 'public' из пути
+}

@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { ThemeProvider } from '@/context/theme';
+import '../styles/globals.scss';
+
 
 export const metadata: Metadata = {
   title: "morsprop3est",
@@ -12,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+    <ThemeProvider>
       <body>{children}</body>
+    </ThemeProvider>
     </html>
   );
 }

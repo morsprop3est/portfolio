@@ -11,7 +11,7 @@
 }
 
 .mainBackground {
-  position: fixed; /* Изменено с relative на fixed */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -20,7 +20,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: #000;
+  background-color: var(--color-secondary);
+  transition: background-color 0.3s ease;
   overflow: hidden;
 
   .triangle {
@@ -28,7 +29,6 @@
     height: 75vh;
     background-size: 15vw;
     background-position: center bottom;
-    background-color: gray;
     animation: moveUp 120s linear infinite;
   }
 }

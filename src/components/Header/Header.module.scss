@@ -9,12 +9,14 @@
     align-items: center;
     height: 125px;
     padding: 0 20px;
-    color: #fff;
+
 
     .logo {
-      width: 75px;
-      height: auto;
-      color: white;
+      width: 63px;
+      height: 75px;
+      background-image: var(--logo);
+      background-size: cover;
+      background-position: center;
     }
 
     .hamburger {
@@ -26,7 +28,8 @@
       .line1, .line3 {
         width: 30px;
         height: 3px;
-        background-color: #fff;
+        background-color: var(--color-primary);
+        transition: background-color 0.3s ease;
         margin: 5px 0;
       }
 
@@ -34,7 +37,8 @@
         margin: 5px auto;
         width: 15px;
         height: 3px;
-        background-color: #fff;
+        background-color: var(--color-primary);
+        transition: background-color 0.3s ease;
       }
     }
   }

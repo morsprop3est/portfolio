@@ -11,19 +11,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  outline: 2px solid #DCDCDC;
+  outline: 2px solid var(--color-primary);
+  transition: outline-color 0.3s ease;
   gap: 25px;
 
 
   &.filled {
-    background-color: #DCDCDC;
-    color: #050505;
+    background-color: var(--color-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: var(--color-secondary);
     border: none;
   }
 
   &.outlined {
     background-color: transparent;
-    color: #DCDCDC;
-    outline: 2px solid #DCDCDC;
+    color: var(--color-primary);
+    transition: color 0.3s ease, outline-color 0.3s ease;
+    outline: 2px solid var(--color-primary);
   }
 }

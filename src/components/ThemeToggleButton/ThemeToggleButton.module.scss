@@ -10,5 +10,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #DCDCDC;
+  color: var(--color-primary);
+  transition: color 0.3s ease;
 }
